@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Электронное приглашение на свадьбу Артёма и Татьяны">
+  <meta name="description" content="Электронное приглашение на свадьбу Артёма и Татьяны — 26 сентября 2026, ресторан Яръ">
   <title>Артём & Татьяна — свадебное приглашение</title>
+  <meta property="og:title" content="Артём & Татьяна — приглашение на свадьбу">
+  <meta property="og:description" content="26 сентября 2026 · Ресторан «Яръ»">
+  <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -15,8 +18,8 @@
   <main class="invitation">
     <header class="hero" aria-labelledby="hero-title">
       <div class="hero__inner">
-        <h1 id="hero-title" class="reveal">Мы поженимся!</h1>
-        <p class="hero__lead reveal">Приглашаем на нашу свадьбу</p>
+        <h1 id="hero-title" class="reveal">Артём <span>&amp;</span> Татьяна</h1>
+        <p class="hero__lead reveal">У нас будет свадьба!</p>
         <div class="countdown countdown--hero reveal" data-target="2026-09-26T15:00:00">
           <ol class="countdown__grid">
             <li><span data-unit="days">000</span><small>дней</small></li>
@@ -25,14 +28,17 @@
             <li><span data-unit="seconds">00</span><small>секунд</small></li>
           </ol>
         </div>
+        <p class="hero__date reveal">26 · 09 · 2026</p>
       </div>
     </header>
     <section class="section about" aria-labelledby="about-title">
-      <div class="about__photo placeholder-photo reveal" role="img" aria-label="Здесь будет фотография пары"><span>здесь появится<br>наша фотография</span></div>
+      <div class="about__photo reveal" role="img" aria-label="Фотография пары">
+        <img src="assets/photo2.jpg" alt="Артём и Татьяна" loading="lazy">
+      </div>
       <div class="about__text reveal">
         <p class="script">это мы</p>
         <h2 id="about-title">Артём <span>&amp;</span> Татьяна</h2>
-        <p>Совсем скоро мы станем мужем и женой. Мы хотим провести этот день в кругу любимых людей и вместе создать тёплые воспоминания, поэтому будем счастливы видеть вас на нашем празднике.</p>
+        <p>Дорогие гости, мы будем счастливы разделить с вами день, наполненный любовью, теплом и радостными моментами. С нетерпением ждём вас, чтобы вместе создать воспоминания, которые останутся с нами навсегда.</p>
       </div>
     </section>
     <section class="section details" aria-labelledby="details-title">
@@ -41,9 +47,9 @@
         <h2 id="details-title">Важные детали</h2>
       </div>
       <ul class="details__grid">
-        <li class="reveal"><span class="details__icon" aria-hidden="true">♥</span><h3>Дата</h3><p><strong>26 сентября</strong><br>Суббота</p></li>
-        <li class="reveal"><span class="details__icon" aria-hidden="true">⏰</span><h3>Время сбора гостей</h3><p><strong>15:00</strong><br>Не опаздывайте, пропустите много интересного</p></li>
-        <li class="reveal"><span class="details__icon" aria-hidden="true">⌂</span><h3>Место проведения</h3><p>Название площадки<br>Город, улица, 12</p></li>
+        <li class="reveal"><span class="details__icon" aria-hidden="true">♥</span><h3>Дата</h3><p><strong>26 сентября 2026</strong><br>Суббота</p></li>
+        <li class="reveal"><span class="details__icon" aria-hidden="true">⏰</span><h3>Сбор гостей</h3><p><strong>14:00</strong><br>Просьба взять хорошее настроение и улыбки</p></li>
+        <li class="reveal"><span class="details__icon" aria-hidden="true">⌂</span><h3>Место</h3><p>Ресторан «Яръ»<br>Ленинградский пр-т, 32/2, зал «Зеркальный»</p></li>
       </ul>
     </section>
     <section class="section place" aria-labelledby="place-title">
@@ -51,10 +57,36 @@
         <p class="script reveal">локация</p>
         <h2 id="place-title" class="reveal">Место проведения</h2>
       </div>
-      <div class="place__photo placeholder-photo reveal" role="img" aria-label="Здесь будет фотография места проведения"><span>фотография<br>места проведения</span></div>
+      <div class="place__photo reveal">
+        <img src="assets/venue.jpg" alt="Зал «Зеркальный» в ресторане «Яръ»" loading="lazy">
+      </div>
       <div class="place__layout">
-        <p class="reveal">Здесь будет описание площадки: атмосфера, особенности локации, как добраться.</p>
+        <p class="reveal">Ресторан «Яръ» — один из самых красивых банкетных залов Москвы. Зал «Зеркальный» на первом этаже: лепнина, люстры, круглые столы с белыми скатертями.</p>
         <a class="button reveal" href="#map">Построить маршрут</a>
+      </div>
+    </section>
+    <section class="section schedule" aria-labelledby="schedule-title">
+      <p class="script reveal">программа</p>
+      <h2 id="schedule-title" class="reveal">Программа торжества</h2>
+      <ol class="timeline timeline--wide">
+        <li class="reveal"><time>14:00</time><div><strong>Сбор гостей / фуршет</strong><span>Просьба взять с собой хорошее настроение и улыбки</span></div></li>
+        <li class="reveal"><time>15:00</time><div><strong>Свадебный банкет</strong><span>Время вкусной еды, конкурсов и трогательных моментов</span></div></li>
+        <li class="reveal"><time>20:00</time><div><strong>Время танцевать</strong><span>Снимаем каблуки, надеваем кроссовки и рвём танцпол</span></div></li>
+        <li class="reveal"><time>23:00</time><div><strong>Завершение вечера</strong><span>Даже самый прекрасный вечер когда-нибудь заканчивается</span></div></li>
+      </ol>
+    </section>
+    <section class="section dress" aria-labelledby="dress-title">
+      <div class="dress__inner reveal">
+        <p class="script">дресс-код</p>
+        <h2 id="dress-title">Приходите в коктейльных нарядах</h2>
+        <p>Чтобы подчеркнуть значимость этого события, просим остановить свой выбор на коктейльных нарядах. Цвет не имеет значения. <strong>Милых дам просим оставить белый для невесты.</strong></p>
+      </div>
+    </section>
+    <section class="section wishes" aria-labelledby="wishes-title">
+      <div class="dress__inner reveal">
+        <p class="script">пожелания</p>
+        <h2 id="wishes-title">Пожелания</h2>
+        <p>Если захотите поздравить нас, ваши пожелания в конвертах помогут заложить прочный фундамент для построения нашей новой семьи.</p>
       </div>
     </section>
     <section id="map" class="section map" aria-labelledby="map-title">
@@ -63,15 +95,13 @@
         <h2 id="map-title" class="reveal">Карта</h2>
       </div>
       <div class="map__frame reveal" role="region" aria-label="Яндекс.Карта с местом проведения">
-        <iframe src="https://yandex.ru/map-widget/v1/?ll=37.617635%2C55.755814&z=10" loading="lazy" title="Яндекс.Карта — место проведения" allowfullscreen></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=37.565963%2C55.778261&z=15&pt=37.565963,55.778261,pm2bll" loading="lazy" title="Яндекс.Карта — ресторан «Яръ»" allowfullscreen></iframe>
       </div>
-      <p class="map__note reveal">Точный адрес появится в карте после согласования площадки.</p>
+      <p class="map__note reveal">Ленинградский проспект, 32/2 — рядом со станцией метро «Аэропорт».</p>
     </section>
-    <section class="section dress" aria-labelledby="dress-title">
-      <div class="dress__inner reveal">
-        <p class="script">дресс-код</p>
-        <h2 id="dress-title">Приходите в чём хотите</h2>
-        <p>У нас нет ограничений по цветовой палитре — выбирайте наряд, в котором вам будет комфортно. Что-то праздничное и красивое — всегда хороший выбор. <strong>Милые дамы, просим оставить белый цвет и его оттенки для невесты.</strong></p>
+    <section class="section couple" aria-labelledby="couple-title">
+      <div class="couple__photo reveal">
+        <img src="assets/photo1.jpg" alt="Артём и Татьяна танцуют" loading="lazy">
       </div>
     </section>
     <footer class="footer">
