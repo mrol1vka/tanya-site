@@ -33,19 +33,19 @@
     const frag = document.createDocumentFragment();
     heads.forEach((h) => {
       const el = document.createElement('span');
-      el.className = 'head';
+      el.className = 'calendar__head';
       el.textContent = h;
       frag.appendChild(el);
     });
     for (let i = 0; i < startWeekday; i += 1) {
       const el = document.createElement('span');
-      el.className = 'day is-empty';
+      el.className = 'calendar__day is-empty';
       el.textContent = '·';
       frag.appendChild(el);
     }
     for (let d = 1; d <= daysInMonth; d += 1) {
       const el = document.createElement('span');
-      el.className = 'day' + (d === 26 ? ' is-heart' : '');
+      el.className = 'calendar__day' + (d === 26 ? ' is-heart' : '');
       el.textContent = d;
       frag.appendChild(el);
     }
