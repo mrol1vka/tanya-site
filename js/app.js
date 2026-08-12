@@ -47,15 +47,7 @@
       const el = document.createElement('span');
       if (d === 26) {
         el.className = 'calendar__day is-heart';
-        const num = document.createElement('span');
-        num.className = 'calendar__num';
-        num.textContent = '26';
-        const heart = document.createElement('span');
-        heart.className = 'calendar__heart';
-        heart.setAttribute('aria-hidden', 'true');
-        heart.textContent = '♥';
-        el.appendChild(num);
-        el.appendChild(heart);
+        el.innerHTML = '<svg class="calendar__heart" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 88 C50 88 12 60 12 36 C12 21 24 11 36 11 C44 11 48 16 50 22 C52 16 56 11 64 11 C76 11 88 21 88 36 C88 60 50 88 50 88 Z" /></svg><span class="calendar__num">26</span>';
       } else {
         el.className = 'calendar__day';
         el.textContent = d;
