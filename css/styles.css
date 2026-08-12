@@ -75,7 +75,7 @@ img { display: block; max-width: 100%; height: auto; }
 .timeline--wide time { font: 1.7rem var(--serif); color: var(--paper); }
 .timeline--wide strong { display: block; font: 1.35rem var(--serif); color: var(--paper); margin-top: .15rem; }
 .timeline--wide span { display: block; font-size: 1rem; line-height: 1.5; opacity: .9; margin-top: .25rem; }
-.extras { background: oklch(0.96 0.022 90 / .55); }
+.collage { width: min(100% - 4rem, 64rem); margin: 0 auto; padding: .8rem; background: var(--olive); border-radius: .4rem; display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; box-shadow: 0 1.4rem 2.6rem -1.4rem oklch(0 0 0 / .25); }
 .collage { width: min(100% - 4rem, 64rem); margin: 0 auto; padding: .7rem; background: var(--olive); border-radius: .4rem; display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; box-shadow: 0 1.4rem 2.6rem -1.4rem oklch(0 0 0 / .25); }
 .extras__cell { padding: 1.5rem 0; }
 .extras__cell:first-child { border-right: 1px solid var(--line); padding-right: 1.5rem; }
