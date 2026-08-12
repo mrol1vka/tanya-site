@@ -76,21 +76,6 @@ img { display: block; max-width: 100%; height: auto; }
 .timeline--wide strong { display: block; font: 1.35rem var(--serif); color: var(--paper); margin-top: .15rem; }
 .timeline--wide span { display: block; font-size: 1rem; line-height: 1.5; opacity: .9; margin-top: .25rem; }
 .collage { width: min(100% - 4rem, 64rem); margin: 0 auto; padding: .8rem; background: var(--olive); border-radius: .4rem; display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; box-shadow: 0 1.4rem 2.6rem -1.4rem oklch(0 0 0 / .25); }
-.collage { width: min(100% - 4rem, 64rem); margin: 0 auto; padding: .7rem; background: var(--olive); border-radius: .4rem; display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; box-shadow: 0 1.4rem 2.6rem -1.4rem oklch(0 0 0 / .25); }
-.extras__cell { padding: 1.5rem 0; }
-.extras__cell:first-child { border-right: 1px solid var(--line); padding-right: 1.5rem; }
-.extras__cell:last-child { padding-left: 1.5rem; }
-.extras__cell h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); margin: .15rem 0 1rem; }
-.extras__cell p { font-size: 1rem; line-height: 1.55; }
-.extras__cell p strong { color: var(--olive); }
-.map h2 { font-size: clamp(2.2rem, 4.5vw, 3.4rem); margin-bottom: 1.4rem; }
-.map__head { width: min(100% - 4rem, 64rem); margin: 0 auto 1.4rem; }
-.map__frame { width: min(100% - 4rem, 64rem); aspect-ratio: 16/9; margin: 0 auto; border-radius: 1rem; overflow: hidden; box-shadow: 0 1.4rem 2.6rem -1.4rem oklch(0 0 0 / .2); background: oklch(0.9 0.012 90); }
-.map__frame iframe { width: 100%; height: 100%; border: 0; }
-.map__note { margin: 1rem auto 0; max-width: 60rem; font-size: .9rem; color: var(--muted); }
-.couple { padding: 5rem 0 0; }
-.couple h2 { color: var(--olive); font-size: clamp(2.2rem, 4.5vw, 3.4rem); margin: .15rem 0 1.6rem; }
-.collage { width: min(100% - 4rem, 64rem); margin: 0 auto; padding: 1.4rem; background: var(--olive); border-radius: .5rem; display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; box-shadow: 0 1.4rem 2.6rem -1.4rem oklch(0 0 0 / .25); }
 .collage img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: .15rem; display: block; }
 .footer { text-align: center; padding: 6rem 1rem 4rem; background: var(--olive-dark); color: var(--paper); }
 .footer__inner { width: min(100% - 2rem, 60rem); margin: 0 auto; }
