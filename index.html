@@ -10,7 +10,7 @@
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -20,18 +20,11 @@
       <div class="hero__inner">
         <h1 id="hero-title" class="reveal">Артём <span>&amp;</span> Татьяна</h1>
         <p class="hero__lead reveal">У нас будет свадьба!</p>
+        <div class="hero__photo reveal">
+          <img src="assets/dance.jpg" alt="Артём и Татьяна" loading="lazy">
+        </div>
       </div>
     </header>
-    <section class="section about" aria-labelledby="about-title">
-      <div class="about__photo reveal">
-        <img src="assets/dance.jpg" alt="Артём и Татьяна" loading="lazy">
-      </div>
-      <div class="about__text reveal">
-        <p class="script">это мы</p>
-        <h2 id="about-title">Артём <span>&amp;</span> Татьяна</h2>
-        <p>Дорогие гости, мы будем счастливы разделить с вами день, наполненный любовью, теплом и радостными моментами. С нетерпением ждём вас, чтобы вместе создать воспоминания, которые останутся с нами навсегда.</p>
-      </div>
-    </section>
     <section class="section calendar" aria-labelledby="calendar-title">
       <p class="script reveal">дата свадьбы</p>
       <h2 id="calendar-title" class="reveal">26 · 09 · 2026</h2>
@@ -50,8 +43,16 @@
         <a class="button reveal" href="#map">Построить маршрут</a>
       </div>
     </section>
+    <section id="map" class="section map" aria-labelledby="map-title">
+      <div class="map__head">
+        <h2 id="map-title" class="reveal">Карта</h2>
+      </div>
+      <div class="map__frame reveal" role="region" aria-label="Яндекс.Карта с местом проведения">
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=37.569450%2C55.784622&z=17&pt=37.569450,55.784622,pm2rdl" loading="lazy" title="Яндекс.Карта — ресторан «Яръ»" allowfullscreen></iframe>
+      </div>
+      <p class="map__note reveal">Ленинградский проспект, 32/2, Москва, 125040</p>
+    </section>
     <section class="section schedule" aria-labelledby="schedule-title">
-      <p class="script reveal">программа</p>
       <h2 id="schedule-title" class="reveal">Программа торжества</h2>
       <ol class="timeline">
         <li class="reveal"><time>14:00</time><div><strong>Сбор гостей / фуршет</strong><span>Просьба взять с собой хорошее настроение и улыбки</span></div></li>
@@ -63,26 +64,14 @@
     <section class="section extras" aria-labelledby="extras-title">
       <div class="extras__grid">
         <div class="extras__cell reveal">
-          <p class="script">дресс-код</p>
-          <h2>Приходите в коктейльных нарядах</h2>
+          <h2 id="dress-title">Дресс-код</h2>
           <p>Чтобы подчеркнуть значимость этого события, просим остановить свой выбор на коктейльных нарядах. Цвет не имеет значения. <strong>Милых дам просим оставить белый для невесты.</strong></p>
         </div>
         <div class="extras__cell reveal">
-          <p class="script">пожелания</p>
-          <h2>Пожелания</h2>
+          <h2 id="wishes-title">Пожелания</h2>
           <p>Если захотите поздравить нас, ваши пожелания в конвертах помогут заложить прочный фундамент для построения нашей новой семьи.</p>
         </div>
       </div>
-    </section>
-    <section id="map" class="section map" aria-labelledby="map-title">
-      <div class="map__head">
-        <p class="script reveal">как добраться</p>
-        <h2 id="map-title" class="reveal">Карта</h2>
-      </div>
-      <div class="map__frame reveal" role="region" aria-label="Яндекс.Карта с местом проведения">
-        <iframe src="https://yandex.ru/map-widget/v1/?ll=37.569450%2C55.784622&z=17&pt=37.569450,55.784622,pm2rdl" loading="lazy" title="Яндекс.Карта — ресторан «Яръ»" allowfullscreen></iframe>
-      </div>
-      <p class="map__note reveal">Ленинградский проспект, 32/2, Москва, 125040</p>
     </section>
     <section class="section couple" aria-labelledby="couple-title">
       <div class="collage reveal">
@@ -103,13 +92,6 @@
         </ol>
       </div>
     </section>
-    <footer class="footer">
-      <div class="footer__inner reveal">
-        <p class="script">обнимаем,</p>
-        <p class="footer__names">Артём <span>&amp;</span> Татьяна</p>
-        <p class="footer__date">26 · 09 · 2026</p>
-      </div>
-    </footer>
   </main>
   <script src="js/app.js"></script>
 </body>
