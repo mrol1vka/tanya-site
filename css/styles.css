@@ -19,11 +19,9 @@ body { margin: 0; color: var(--ink); font-family: var(--sans); background: var(-
 .invitation { position: relative; }
 .script { font: italic 1.6rem/1 var(--serif); color: var(--olive); margin: 0 0 .4rem; }
 h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: 500; text-wrap: balance; }
-img { display: block; max-width: 100%; height: auto; }
-.hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 6rem 1.5rem; background: linear-gradient(180deg, oklch(0.96 0.022 90 / .7) 0%, oklch(0.93 0.025 70 / .55) 100%); }
-.hero__inner { text-align: center; max-width: 60rem; }
-.hero h1 { font-size: clamp(3rem, 9vw, 6.5rem); line-height: .92; color: var(--olive); font-weight: 500; }
-.hero__lead { font-size: clamp(1.05rem, 1.6vw, 1.4rem); color: var(--ink); opacity: .8; margin: 1.6rem 0 0; letter-spacing: .01em; }
+.hero h1 { font-size: clamp(3rem, 9vw, 6.5rem); line-height: .92; color: var(--olive); font-weight: 500; margin-bottom: 2.2rem; }
+.hero__lead { font: clamp(1.6rem, 3vw, 2.6rem)/1.2 var(--serif); color: var(--olive); margin: 2rem 0 0; letter-spacing: .01em; font-style: italic; }
+
 .hero__photo { width: min(100% - 4rem, 28rem); margin: 0 auto; }
 .hero__photo img { width: 100%; aspect-ratio: 9/16; object-fit: cover; object-position: center 25%; border-radius: .4rem; box-shadow: 0 1.4rem 2.6rem -1.4rem oklch(0 0 0 / .25); }
 .countdown { margin: 1.6rem 0 1.4rem; }
