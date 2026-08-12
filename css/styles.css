@@ -39,7 +39,7 @@ img { display: block; max-width: 100%; height: auto; }
 .about h2 { font-size: clamp(2.2rem, 4.5vw, 3.4rem); line-height: .95; margin-bottom: 1.1rem; }
 .about h2 span { color: var(--olive); font-style: italic; }
 .about p { font-size: 1rem; line-height: 1.6; max-width: 32rem; }
-
+.calendar { background: oklch(0.96 0.022 90 / .35); }
 .calendar h2 { font-size: clamp(2.4rem, 5vw, 3.8rem); margin: .15rem 0 1.6rem; color: var(--olive); }
 .calendar__grid { width: min(100% - 4rem, 56rem); margin: 0 auto; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); column-gap: .35rem; row-gap: .35rem; }
 .calendar__head { font-size: .9rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); padding: .6rem 0; border-bottom: 1px solid var(--line); text-align: center; }
@@ -61,18 +61,19 @@ img { display: block; max-width: 100%; height: auto; }
 .schedule { background: var(--olive-dark); color: var(--paper); }
 .schedule h2 { color: var(--paper); font-size: clamp(2.2rem, 4.5vw, 3.4rem); margin: .15rem 0 1.6rem; }
 .schedule .script { color: oklch(0.9 0.04 110); }
-.timeline--wide { width: min(100% - 4rem, 70rem); margin: 0 auto; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.8rem; text-align: left; }
-.timeline--wide li { display: grid; grid-template-columns: 1fr; gap: .5rem; padding: 0 0 0 1.2rem; border-left: 2px solid oklch(0.9 0.04 110 / .5); }
-.timeline--wide time { font: 1.7rem var(--serif); color: var(--paper); }
-.timeline--wide strong { display: block; font: 1.35rem var(--serif); color: var(--paper); margin-top: .15rem; }
-.timeline--wide span { display: block; font-size: 1rem; line-height: 1.5; opacity: .9; margin-top: .25rem; }
+.timeline { width: min(100% - 4rem, 70rem); margin: 0 auto; padding: 0; list-style: none; display: grid; grid-template-columns: 1fr; gap: 1rem; text-align: left; }
+.timeline li { display: grid; grid-template-columns: 5.5rem 1fr; gap: 1.2rem; align-items: start; padding: 1rem 0; border-top: 1px solid oklch(0.9 0.04 110 / .25); }
+.timeline li:first-child { border-top: 0; padding-top: 0; }
+.timeline time { font: 1.6rem var(--serif); color: var(--paper); line-height: 1.2; }
+.timeline strong { display: block; font: 1.25rem var(--serif); color: var(--paper); margin-bottom: .25rem; }
+.timeline span { display: block; font-size: .95rem; line-height: 1.5; opacity: .85; }
 .extras { background: oklch(0.96 0.022 90 / .55); }
 .extras__grid { width: min(100% - 4rem, 70rem); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 2.4rem 3rem; text-align: left; }
 .extras__cell { padding: 1.5rem 0; }
 .extras__cell:first-child { border-right: 1px solid var(--line); padding-right: 1.5rem; }
 .extras__cell:last-child { padding-left: 1.5rem; }
-.extras__cell h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); margin: .15rem 0 1rem; }
-.extras__cell p { font-size: 1rem; line-height: 1.55; }
+.extras__cell h2 { font-size: clamp(2rem, 3.6vw, 2.8rem); margin: .15rem 0 1.2rem; }
+.extras__cell p { font-size: 1.15rem; line-height: 1.6; }
 .extras__cell p strong { color: var(--olive); }
 .map { background: oklch(0.96 0.022 90 / .55); }
 .map h2 { font-size: clamp(2.2rem, 4.5vw, 3.4rem); margin-bottom: 1.4rem; }
@@ -80,33 +81,29 @@ img { display: block; max-width: 100%; height: auto; }
 .map__frame { width: min(100% - 4rem, 64rem); aspect-ratio: 16/9; margin: 0 auto; border-radius: 1rem; overflow: hidden; box-shadow: 0 1.4rem 2.6rem -1.4rem oklch(0 0 0 / .2); background: oklch(0.9 0.012 90); }
 .map__frame iframe { width: 100%; height: 100%; border: 0; }
 .map__note { margin: 1.4rem auto 0; max-width: 60rem; font-size: 1.3rem; font-weight: 500; color: var(--olive); text-align: center; }
-.countdown-section { background: oklch(0.96 0.022 90 / .35); padding: 5rem 0; }
-.countdown-section h2 { font-size: clamp(2.2rem, 4.5vw, 3.4rem); margin: .15rem 0 1.6rem; color: var(--olive); }
-.countdown-section .script { color: var(--olive); margin-bottom: .25rem; }
-.countdown-section .countdown__grid { gap: clamp(1.6rem, 5vw, 4rem); }
 .couple { padding: 5rem 0 0; }
-.couple h2 { color: var(--olive); font-size: clamp(2.2rem, 4.5vw, 3.4rem); margin: .15rem 0 1.6rem; }
 .collage { width: min(100% - 4rem, 64rem); margin: 0 auto; padding: .8rem; background: var(--olive); border-radius: .4rem; display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; box-shadow: 0 1.4rem 2.6rem -1.4rem oklch(0 0 0 / .25); }
 .collage img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: .15rem; display: block; }
+.countdown-section { background: oklch(0.96 0.022 90 / .35); padding: 5rem 0; }
+.countdown-section h2 { font-size: clamp(2.2rem, 4.5vw, 3.4rem); margin: 0 0 1.6rem; color: var(--olive); }
+.countdown-section .countdown__grid { gap: clamp(1.6rem, 5vw, 4rem); }
 .footer { text-align: center; padding: 6rem 1rem 4rem; background: var(--olive-dark); color: var(--paper); }
 .footer__inner { width: min(100% - 2rem, 60rem); margin: 0 auto; }
 .footer .script { color: oklch(0.9 0.04 110); }
 .footer__names { font: clamp(2.6rem, 6vw, 4rem) var(--serif); margin: .25rem 0; }
 .footer__names span { color: oklch(0.9 0.04 110); font-style: italic; }
-.footer__closer { font: italic 1.4rem var(--serif); margin: .4rem 0 0; }
 .footer__date { margin-top: 1rem; font-size: .8rem; letter-spacing: .25em; text-transform: uppercase; opacity: .7; }
 .reveal { opacity: 0; transform: translateY(1.4rem); transition: opacity .85s cubic-bezier(.22,.7,.2,1), transform .85s cubic-bezier(.22,.7,.2,1); }
 .reveal.is-visible { opacity: 1; transform: none; }
 @media (max-width: 699px) {
   .about { grid-template-columns: 1fr; gap: 1.5rem; }
   .about__text { text-align: center; }
-  .details__grid { grid-template-columns: 1fr; gap: 1.6rem; }
   .extras__grid { grid-template-columns: 1fr; }
   .extras__cell:first-child { border-right: 0; border-bottom: 1px solid var(--line); padding-right: 0; padding-bottom: 1.5rem; }
   .extras__cell:last-child { padding-left: 0; }
   .countdown__grid { gap: 1rem; }
   .section { padding: 3.5rem 0; }
-  .timeline--wide { grid-template-columns: 1fr 1fr; }
+  .timeline li { grid-template-columns: 4.5rem 1fr; gap: .8rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
