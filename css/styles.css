@@ -33,7 +33,7 @@ img { display: block; max-width: 100%; height: auto; }
 .hero__date { font: italic 1.3rem var(--serif); color: var(--ink); margin: 0; }
 .section { width: 100%; padding: 5rem 0; text-align: center; }
 .about { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 3rem; align-items: center; width: min(100% - 4rem, 70rem); margin: 0 auto; }
-.about__photo img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center 25%; border-radius: .4rem; box-shadow: 0 1.4rem 2.6rem -1.4rem oklch(0 0 0 / .25); }
+.about__photo img { width: 100%; aspect-ratio: 9/16; object-fit: cover; object-position: center 25%; border-radius: .4rem; box-shadow: 0 1.4rem 2.6rem -1.4rem oklch(0 0 0 / .25); }
 .about__text { text-align: left; }
 .about .script { margin-bottom: .3rem; }
 .about h2 { font-size: clamp(2.2rem, 4.5vw, 3.4rem); line-height: .95; margin-bottom: 1.1rem; }
@@ -52,9 +52,10 @@ img { display: block; max-width: 100%; height: auto; }
 .calendar h2 { font-size: clamp(2.4rem, 5vw, 3.8rem); margin: .15rem 0 1.6rem; color: var(--olive); }
 .calendar__grid { width: min(100% - 4rem, 56rem); margin: 0 auto; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); column-gap: .35rem; row-gap: .35rem; }
 .calendar__head { font-size: .9rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); padding: .6rem 0; border-bottom: 1px solid var(--line); text-align: center; }
-.calendar__day { font-size: 1.3rem; padding: .9rem 0; color: var(--ink); position: relative; text-align: center; min-height: 2.4rem; display: flex; align-items: center; justify-content: center; }
+.calendar__day { font-size: 1.3rem; padding: .9rem 0; color: var(--ink); text-align: center; min-height: 2.4rem; display: flex; align-items: center; justify-content: center; }
 .calendar__day.is-empty { visibility: hidden; }
-.calendar__day.is-heart { color: var(--paper); background: var(--olive); border-radius: 50%; width: 2.4rem; height: 2.4rem; font-weight: 600; }
+.calendar__day.is-heart { font-weight: 700; color: var(--olive); }
+.calendar__heart { color: var(--olive); font-size: 1.4rem; margin-left: .25rem; line-height: 1; }
 .place { padding-top: 6rem; padding-bottom: 6rem; }
 .place__head { width: min(100% - 4rem, 64rem); margin: 0 auto 1.4rem; }
 .place h2 { font-size: clamp(2.2rem, 4.5vw, 3.4rem); }
@@ -75,12 +76,12 @@ img { display: block; max-width: 100%; height: auto; }
 .timeline--wide span { display: block; font-size: 1rem; line-height: 1.5; opacity: .9; margin-top: .25rem; }
 .extras { background: oklch(0.96 0.022 90 / .55); }
 .extras__grid { width: min(100% - 4rem, 70rem); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 2.4rem 3rem; text-align: left; }
+.extras__cell { padding: 1.5rem 0; }
+.extras__cell:first-child { border-right: 1px solid var(--line); padding-right: 1.5rem; }
+.extras__cell:last-child { padding-left: 1.5rem; }
 .extras__cell h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); margin: .15rem 0 1rem; }
 .extras__cell p { font-size: 1rem; line-height: 1.55; }
 .extras__cell p strong { color: var(--olive); }
-.extras__cell { padding: 1.5rem 0; border-top: 1px solid var(--line); }
-.extras__cell:first-child { border-right: 1px solid var(--line); padding-right: 1.5rem; }
-.extras__cell:last-child { padding-left: 1.5rem; }
 .map h2 { font-size: clamp(2.2rem, 4.5vw, 3.4rem); margin-bottom: 1.4rem; }
 .map__head { width: min(100% - 4rem, 64rem); margin: 0 auto 1.4rem; }
 .map__frame { width: min(100% - 4rem, 64rem); aspect-ratio: 16/9; margin: 0 auto; border-radius: 1rem; overflow: hidden; box-shadow: 0 1.4rem 2.6rem -1.4rem oklch(0 0 0 / .2); background: oklch(0.9 0.012 90); }
@@ -88,7 +89,7 @@ img { display: block; max-width: 100%; height: auto; }
 .map__note { margin: 1rem auto 0; max-width: 60rem; font-size: .9rem; color: var(--muted); }
 .couple { padding: 5rem 0 0; }
 .couple h2 { color: var(--olive); font-size: clamp(2.2rem, 4.5vw, 3.4rem); margin: .15rem 0 1.6rem; }
-.collage { width: min(100% - 4rem, 64rem); margin: 0 auto; padding: .8rem; background: var(--olive); border-radius: .4rem; display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; box-shadow: 0 1.4rem 2.6rem -1.4rem oklch(0 0 0 / .25); }
+.collage { width: min(100% - 4rem, 64rem); margin: 0 auto; padding: 1.4rem; background: var(--olive); border-radius: .5rem; display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; box-shadow: 0 1.4rem 2.6rem -1.4rem oklch(0 0 0 / .25); }
 .collage img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: .15rem; display: block; }
 .footer { text-align: center; padding: 6rem 1rem 4rem; background: var(--olive-dark); color: var(--paper); }
 .footer__inner { width: min(100% - 2rem, 60rem); margin: 0 auto; }

@@ -28,7 +28,7 @@
   if (cal) {
     const heads = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
     const first = new Date(Date.UTC(2026, 8, 1));
-    const startWeekday = (first.getUTCDay() + 6) % 7; // пн=0
+    const startWeekday = (first.getUTCDay() + 6) % 7;
     const daysInMonth = 30;
     const frag = document.createDocumentFragment();
     heads.forEach((h) => {
@@ -45,8 +45,21 @@
     }
     for (let d = 1; d <= daysInMonth; d += 1) {
       const el = document.createElement('span');
-      el.className = 'calendar__day' + (d === 26 ? ' is-heart' : '');
-      el.textContent = d;
+      if (d === 26) {
+        el.className = 'calendar__day is-heart';
+        const num = document.createElement('span');
+        num.className = 'calendar__num';
+        num.textContent = '26';
+        const heart = document.createElement('span');
+        heart.className = 'calendar__heart';
+        heart.setAttribute('aria-hidden', 'true');
+        heart.textContent = '♥';
+        el.appendChild(num);
+        el.appendChild(heart);
+      } else {
+        el.className = 'calendar__day';
+        el.textContent = d;
+      }
       frag.appendChild(el);
     }
     cal.appendChild(frag);
@@ -67,25 +80,5 @@
     reveals.forEach((el) => io.observe(el));
   } else {
     reveals.forEach((el) => el.classList.add('is-visible'));
-  }
-
-  // Лёгкий parallax для травы
-  const grass = document.querySelectorAll('.background__grass');
-  if (grass.length && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    let ticking = false;
-    const update = () => {
-      const y = window.scrollY * 0.06;
-      grass.forEach((g, i) => {
-        const factor = i % 2 === 0 ? 1 : -1;
-        g.style.transform = `translateY(${y * factor}px)`;
-      });
-      ticking = false;
-    };
-    window.addEventListener('scroll', () => {
-      if (!ticking) {
-        requestAnimationFrame(update);
-        ticking = true;
-      }
-    }, { passive: true });
   }
 })();
