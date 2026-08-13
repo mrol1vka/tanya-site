@@ -129,4 +129,7 @@ h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 500; text-wrap
   .ornament--l, .ornament--r { width: 3rem; }
   .ornament--l { transform: translateY(-50%) scaleX(-1) scale(.6); }
   .ornament--r { transform: translateY(-50%) scale(.6); }
+  .hero h1 { font-size: 2.4rem; line-height: 1.05; margin-bottom: 1rem; }
+  .hero__date { font-size: 1.4rem; margin: 0 0 1.2rem; }
+  .hero__lead { font-size: 1.6rem; margin: 1.4rem 0 0; }
 }
