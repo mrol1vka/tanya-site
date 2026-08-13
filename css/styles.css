@@ -56,7 +56,7 @@ h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 500; text-wrap
 .calendar__day.is-heart { position: relative; padding: 0; min-height: 4.6rem; }
 .calendar__day.is-heart .calendar__heart { position: absolute; inset: 50% auto auto 50%; transform: translate(-50%, -50%) rotate(-12deg); width: 4rem; height: 4rem; fill: var(--olive); z-index: 0; }
 .calendar__day.is-heart .calendar__num { position: relative; z-index: 1; color: var(--paper); font-weight: 700; font-size: 1.4rem; line-height: 1; }
-.place { padding-top: 6rem; padding-bottom: 6rem; }
+.place { background: var(--paper); padding-top: 6rem; padding-bottom: 6rem; }
 .place__head { width: min(100% - 4rem, 64rem); margin: 0 auto 1.4rem; }
 .place h2 { color: var(--olive); font-size: clamp(2.2rem, 4.5vw, 3.4rem); }
 .place__name { font: italic clamp(1.1rem, 1.8vw, 1.4rem) var(--serif); color: var(--olive); margin: .6rem 0 0; text-align: center; }
