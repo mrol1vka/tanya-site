@@ -89,7 +89,7 @@ h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 500; text-wrap
 .extras__cell h2 { color: var(--olive); font-size: clamp(2rem, 3.6vw, 2.8rem); margin: 0 0 1.2rem; font-weight: 600; }
 .extras__cell p { font-size: 1.15rem; line-height: 1.6; }
 .extras__cell p strong { color: var(--olive); }
-.couple { padding: 5rem 0 0; }
+.couple { background: var(--paper); padding: 5rem 0 0; }
 .collage { width: min(100% - 4rem, 64rem); margin: 0 auto; padding: .8rem; background: var(--olive); border-radius: .4rem; display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; box-shadow: 0 1.4rem 2.6rem -1.4rem oklch(0 0 0 / .25); }
 .collage img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: .15rem; display: block; }
 .countdown-section { background: var(--paper); padding: 6rem 0; }
