@@ -36,16 +36,16 @@ h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 500; text-wrap
 
 .hero__date { font: clamp(2rem, 4vw, 3rem) var(--serif); color: var(--olive); margin: 0 0 1.6rem; opacity: .85; text-align: center; font-style: italic; }
 .hero__lead { font: clamp(2rem, 3.6vw, 3rem)/1.2 var(--serif); color: var(--olive); margin: 2rem 0 0; letter-spacing: .01em; font-style: italic; text-align: center; }
-.floor2 { background: var(--paper); padding: 5rem 1.5rem 6rem; text-align: center; }
-.floor2 h2 { font-size: clamp(2.2rem, 4.5vw, 3.4rem); color: var(--olive); margin: 0 0 1.6rem; }
-.floor2__text { max-width: 52rem; margin: 0 auto; font-size: clamp(1.05rem, 1.6vw, 1.3rem); line-height: 1.6; color: var(--ink); }
+.floor2 { background: var(--olive-dark); color: var(--paper); padding: 5rem 1.5rem 6rem; text-align: center; }
+.floor2 h2 { font-size: clamp(2.2rem, 4.5vw, 3.4rem); color: var(--paper); margin: 0 0 1.6rem; }
+.floor2__text { max-width: 52rem; margin: 0 auto; font-size: clamp(1.05rem, 1.6vw, 1.3rem); line-height: 1.6; color: var(--paper); }
 
 .hero__photo { width: min(100% - 4rem, 28rem); margin: 0 auto; }
 .hero__photo img { width: 100%; aspect-ratio: 9/16; object-fit: cover; object-position: center 25%; border-radius: .4rem; box-shadow: 0 1.4rem 2.6rem -1.4rem oklch(0 0 0 / .25); }
 .countdown { margin: 1.6rem 0 1.4rem; }
 .countdown--hero .countdown__grid { gap: clamp(1.6rem, 5vw, 4rem); }
-.calendar h2.calendar__month { font-size: clamp(3rem, 7vw, 5rem); margin: 0 0 1.8rem; color: var(--olive); font-weight: 600; text-transform: lowercase; letter-spacing: .04em; }
-.calendar { background: oklch(0.96 0.022 90 / .35); padding: 6rem 1.5rem; }
+.calendar h2.calendar__month { font-size: clamp(3rem, 7vw, 5rem); margin: 0 0 1.8rem; color: var(--olive); font-weight: 300; letter-spacing: .04em; }
+.calendar { background: var(--paper); padding: 6rem 1.5rem; }
 
 
 
@@ -70,7 +70,7 @@ h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 500; text-wrap
 .button { display: inline-block; padding: .85rem 1.4rem; color: var(--paper); background: var(--olive); text-decoration: none; font-size: .85rem; letter-spacing: .05em; border-radius: 999px; font-weight: 500; transition: background .3s ease, transform .3s ease; }
 .button:visited { color: var(--paper); }
 .button:hover, .button:focus-visible { background: var(--olive-dark); transform: translateY(-1px); }
-.map { background: oklch(0.96 0.022 90 / .35); }
+.map { background: var(--paper); }
 .map__frame { width: min(100% - 4rem, 64rem); aspect-ratio: 16/9; margin: 0 auto; border-radius: 1rem; overflow: hidden; box-shadow: 0 1.4rem 2.6rem -1.4rem oklch(0 0 0 / .2); background: oklch(0.9 0.012 90); }
 .map__frame iframe { width: 100%; height: 100%; border: 0; }
 .schedule { background: var(--olive-dark); color: var(--paper); padding: 6rem 1.5rem; text-align: center; }
@@ -81,7 +81,7 @@ h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 500; text-wrap
 .timeline time { font: clamp(2.4rem, 4vw, 3.4rem) var(--serif); color: var(--paper); line-height: 1; font-weight: 600; }
 .timeline strong { display: block; font: clamp(1.8rem, 3vw, 2.4rem) var(--serif); color: var(--paper); margin-bottom: .5rem; font-weight: 600; }
 .timeline span { display: block; font-size: clamp(1.15rem, 1.8vw, 1.4rem); color: var(--paper); opacity: .85; line-height: 1.5; }
-.extras { background: oklch(0.96 0.022 90 / .55); padding: 6rem 0; }
+.extras { background: var(--paper); padding: 6rem 0; }
 .extras__grid { width: min(100% - 4rem, 70rem); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 2.4rem 3rem; text-align: left; }
 
 .extras__cell:first-child { border-right: 1px solid var(--line); padding-right: 1.5rem; }
@@ -92,7 +92,7 @@ h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 500; text-wrap
 .couple { padding: 5rem 0 0; }
 .collage { width: min(100% - 4rem, 64rem); margin: 0 auto; padding: .8rem; background: var(--olive); border-radius: .4rem; display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; box-shadow: 0 1.4rem 2.6rem -1.4rem oklch(0 0 0 / .25); }
 .collage img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: .15rem; display: block; }
-.countdown-section { background: oklch(0.96 0.022 90 / .35); padding: 6rem 0; }
+.countdown-section { background: var(--paper); padding: 6rem 0; }
 .countdown-section h2 { font-size: clamp(2.6rem, 5vw, 3.8rem); margin: 0 0 1.6rem; color: var(--olive); }
 .countdown-section .countdown__grid { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; align-items: baseline; gap: clamp(1.6rem, 5vw, 4rem); }
 .countdown__grid li { display: flex; flex-direction: column; align-items: center; }
