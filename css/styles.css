@@ -3,6 +3,11 @@
   src: url("../assets/fonts/jellyka-love.ttf") format("truetype");
   font-display: swap;
 }
+@font-face {
+  font-family: "Pompadur";
+  src: url("../assets/fonts/pompadur.ttf") format("truetype");
+  font-display: swap;
+}
 :root {
   --olive: oklch(0.4 0.06 112);
   --olive-mid: oklch(0.5 0.07 110);
@@ -16,17 +21,18 @@
   --sky: oklch(0.86 0.02 110);
   --serif: "Cormorant Garamond", Georgia, serif;
   --sans: "Manrope", system-ui, sans-serif;
-  --wedding: "Jellyka Love and Passion", "Cormorant Garamond", Georgia, serif;
+  --handwritten: "Jellyka Love and Passion", "Cormorant Garamond", Georgia, serif;
+  --display: "Pompadur", "Cormorant Garamond", Georgia, serif;
 }
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-.hero h1 { font-family: var(--wedding); font-size: clamp(3rem, 9vw, 6.5rem); line-height: .92; color: var(--olive); font-weight: 500; margin-bottom: 1rem; }
+.hero h1 { font-family: var(--handwritten); font-size: clamp(3rem, 9vw, 6.5rem); line-height: .92; color: var(--olive); font-weight: 500; margin-bottom: 1rem; }
 .background { position: fixed; inset: 0; z-index: -1; pointer-events: none; background-color: var(--paper); }
 .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 6rem 1.5rem; background: var(--paper); }
-.script { font: italic 1.6rem/1 var(--serif); color: var(--olive); margin: 0 0 .4rem; }
-h1, h2, h3 { margin: 0; font-family: var(--wedding); font-weight: 500; text-wrap: balance; text-align: center; }
-.hero h1 { font-family: var(--wedding); }
+h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 500; text-wrap: balance; text-align: center; }
+.hero h1, .countdown-section h2 { font-family: var(--handwritten); }
+
 
 .hero__date { font: clamp(2rem, 4vw, 3rem) var(--serif); color: var(--olive); margin: 0 0 1.6rem; opacity: .85; text-align: center; font-style: italic; }
 .hero__lead { font: clamp(2rem, 3.6vw, 3rem)/1.2 var(--serif); color: var(--olive); margin: 2rem 0 0; letter-spacing: .01em; font-style: italic; text-align: center; }
