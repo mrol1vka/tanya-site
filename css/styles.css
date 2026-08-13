@@ -114,3 +114,19 @@ h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 500; text-wrap
   .reveal { transition: none; transform: none; opacity: 1; }
   .button { transition: none; }
 }
+.ornament { position: absolute !important; pointer-events: none; z-index: 0; opacity: .45; filter: invert(45%) sepia(50%) saturate(900%) hue-rotate(15deg) brightness(92%) contrast(95%); max-width: 9rem; }
+.ornament--tl { top: 2rem; left: 0; width: clamp(5rem, 9vw, 8rem); }
+.ornament--tr { top: 2rem; right: 0; width: clamp(5rem, 9vw, 8rem); transform: scaleX(-1); }
+.ornament--br { bottom: 2rem; right: 0; width: clamp(5rem, 9vw, 8rem); transform: rotate(180deg); }
+.ornament--bl { bottom: 2rem; left: 0; width: clamp(5rem, 9vw, 8rem); transform: scaleX(-1) rotate(180deg); }
+.ornament--l { top: 50%; left: 0; width: clamp(4.5rem, 8vw, 7.5rem); transform: translateY(-50%) scaleX(-1); }
+.ornament--r { top: 50%; right: 0; width: clamp(4.5rem, 8vw, 7.5rem); transform: translateY(-50%); }
+.place, .extras, .couple { position: relative; overflow: hidden; }
+.place > *, .extras > *, .couple > * { position: relative; z-index: 1; }
+@media (max-width: 699px) {
+  .ornament { opacity: .25; }
+  .ornament--tl, .ornament--tr, .ornament--br, .ornament--bl { width: 3.5rem; }
+  .ornament--l, .ornament--r { width: 3rem; }
+  .ornament--l { transform: translateY(-50%) scaleX(-1) scale(.6); }
+  .ornament--r { transform: translateY(-50%) scale(.6); }
+}
